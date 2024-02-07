@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI AMO patatona</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <style>
+        .re {
+            font-family: 'Dancing Script', cursive;
+            transition: transform 0.3s ease;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+        .lo {
+            width:50px; height:auto;
+        }
+        .la {
+             width:300px;height:auto;margin-right:100px;
+        }
+        .ro {
+            font-family: 'Dancing Script', cursive;
+            transition: transform 0.3s ease;
+            margin-top:20px;
+            
+        }
+        .lolo{
+            margin-top: 10px;
+        }
+            .ro:hover, .re:hover {
+                transform: scale(1.1); /* Ingrandisci leggermente al passaggio del mouse */
+            }
+    </style>
+   
+</head>
+<body style="background-color: #f5e1f0; display: flex;">
+    
+    
+    <div style="margin-right:100px;margin-top:10px;float:right;width:600px;height:auto;">
+
+        <img class=" la " src="https://media.tenor.com/TEC6z0acIbUAAAAj/cute-bears-love.gif" GIF animata">
+
+    </div> 
+
+
+
+    <div>
+        <div style="line-height:1.5; margin-right:0px;margin-left:0px;width:800px; height:100px;float:inherit;">
+            <h1 class="re" style="font-family:Dancing 'Brush Script MT';">Vuoi essere la mia valentina?</h1>
+
+            
+            <div style="margin-left: 35px;">
+                <a href="https://www.icegif.com/wp-content/uploads/2023/07/icegif-334.gif">
+                    <button class=" re " style="background-color: #b6ff96; height: 100px; width: 100px; margin-inline-start: 10px; border: none; box-shadow: 0 7px 8px rgb(12, 44, 30); border-radius: 10px; cursor:pointer;">
+                        SHI
+                        <img class="lo" src="" />
+                    </button>
+                </a>
+
+                <a href="https://c8.alamy.com/compit/dk17x9/l-uomo-e-impiccato-in-soffitta-dk17x9.jpg"><button class=" ro " style="background-color: darkred; height: 100px; width: 100px; margin-inline-start: 10px; border: none; box-shadow: 0 7px 8px rgb(12, 44, 30); border-radius: 10px; cursor:pointer;color:aliceblue">
+    NO!
+    <img class="lo" src="" />
+</button>
+                </a>
+                
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+   
+    <div id="contenitore-immagine" class="lolo">
+        <img id="immagine" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQWQf0fhBmSgI68WljJ3M-FifjHkqHnkFWOxEiEzznyf-rxQviTeT9mvjIwWh4kp9h-U&usqp=CAU" alt="cambia immagine♥">
+        <button onclick="cambiaImmagine()">cambia immagine</button>
+    </div>
+
+    <script>
+        var immagini = [
+            "https://i.pinimg.com/originals/90/d2/a0/90d2a025b1e962f62b679389011a4f71.gif",
+            "https://www.notizie24h.it/wp-content/uploads/2020/04/gif_amore_23.gif"
+            
+            
+            // Aggiungi altri percorsi delle immagini se necessario
+        ];
+
+        var indiceImmagine = 0;
+
+        function cambiaImmagine() {
+            var immagine = document.getElementById('immagine');
+            indiceImmagine = (indiceImmagine + 1) % immagini.length;
+            immagine.src = immagini[indiceImmagine];
+        }
+    </script>
+</body>
+    </html>
